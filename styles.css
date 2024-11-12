@@ -1,0 +1,124 @@
+
+body {
+    font-family: ubuntu, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #2196f3;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+
+    box-shadow: 3px 3px 5px white;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-image: url("https://i.pinimg.com/564x/48/93/00/4893007a48c9d8642ec855e0896780aa.jpg");
+        background-size: cover;
+    }
+    
+}
+
+.container {
+    background-image: url("https://i.pinimg.com/originals/5c/0f/68/5c0f6834e0f766121ee18a619243debc.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainbox {
+    width: 80%;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+
+}
+
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    text-align: center;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.search-box {
+    margin: 20px;
+    text-align: center;
+}
+
+#weather-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.city {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+
+.temp {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+#humidity_amount {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+#wind_speed {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
